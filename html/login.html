@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container" id="container">
+        <div class="form-container sing-up">
+            <form >
+                <h1>Create Account</h1>
+                <input type="text" placeholder="User Name">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="No.phone">
+                <input type="password" placeholder="Password">
+                <span> OR</span>
+                <div class="social-icon">
+                    <a href="#">Sing Up With<i class="fa-brands fa-google"></i></a>
+                </div>
+                <button>Sing Up</button>
+            </form>
+        </div>
+        <div class="form-container sing-in">
+            <form >
+                <h1>Sing In</h1>
+                <input type="text" placeholder="User Name">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget your Password?</a>
+                <span> OR</span>
+                <div class="social-icon">
+                    <a href="#"> Sing in with<i class="fa-brands fa-google"></i></a>
+                </div>
+                <button>Sing In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Hello Friends!</h1>
+                    <p>Let's start your Wellmind journey by creating a brand new account to keep track all your progress over the years!</p>
+                    <button class="hidden" id="login">sing in</button>
+                </div>
+                <div class="toggle-panel toggle-rigth">
+                    <h1>Welcome Back!</h1>
+                    <p>To continue your Wellmind journey, please insert your Wellmind account you created before!</p>
+                    <button class="hidden" id="register">sing up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="../js/login.js"></script>
+</body>
+</html>
