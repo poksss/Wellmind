@@ -1,5 +1,3 @@
-//! Active Navbar Item
-
 const navItems = document.querySelectorAll(".nav-item");
 
 navItems.forEach((navItem, i) => {
@@ -11,8 +9,7 @@ navItems.forEach((navItem, i) => {
   });
 });
 
-//! Chart JS
-
+// chart
 const chartData = {
   labels: ["Happy", "Sad", "Angry", "Bored", "Tired"],
   data: [28, 13, 2, 19, 3],
@@ -24,12 +21,12 @@ const eventList = document.querySelector(".chart ul");
 new Chart(chart, {
   type: "doughnut",
   data: {
-    labels: ["Happy", "Sad", "Angry", "Bored", "Tired"],
+    labels: ["Devestated", "Sad", "Neutral", "Happy", "Ecstatic"],
     datasets: [
       {
         label: "# of Events",
-        data: [28, 13, 2, 19, 3],
-        backgroundColor: ["#FFA500", "#008080", "#FF4500", "#1E90FF", "#800020"],
+        data: [4, 10, 6, 17, 5],
+        backgroundColor: ['#ea3d36', '#edbf98', '#dff4c7', '#72e3a6', '#2d6b5f'],
         offset: 10,
         hoverOffset: 8,
         hoverBorderColor: "#9a999b",
