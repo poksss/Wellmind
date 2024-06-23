@@ -630,39 +630,144 @@ input[type="checkbox"] {
   transform: scale(1.5);
 }
 
+/* MOOD TRACKER */
+.mood-tracker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
 
+.mood-tracker h1 {
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 24px;
+}
 
+.mood-tracker h2 {
+  font-size: 12px;
+  color: #b8b8b8;
+}
 
+.mood-tracker h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #fff;
+}
 
+.mood-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.mood {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  color: #000;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
 
+.mood-1 {
+  color: #ea3d36;
+}
 
+.mood-2 {
+  color: #edbf98;
+}
 
+.mood-3 {
+  color: #dff4c7;
+}
 
+.mood-4 {
+  color: #72e3a6;
+}
 
+.mood-5 {
+  color: #2d6b5f;
+}
 
+.mood-clear {
+  color: #888;
+}
 
+.mood.selected {
+  background-color: currentColor;
+}
 
+.mood.selected i {
+  color: #000;
+}
 
+.mood:active {
+  transform: scale(0.9);
+}
 
+.mood:focus {
+  outline: 0;
+}
 
+.mood i {
+  cursor: pointer;
+}
 
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the min width as needed */
+  gap: 10px;
+  background: var(--card-bg-color);
+  border-radius: 6px;
+  border: 5px solid rgba(169, 150, 253, 0.5);
+  box-shadow: 0px 1px 5px var(--shadow-color);
+  justify-items: center;
+  width: 100%;
+}
 
+.months {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+.week_days_container,
+.days_container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for 7 days of the week */
+  gap: 2px;
+}
 
+.week_days,
+.days {
+  text-align: center;
+  margin: 2px 0;
+}
 
+.circle {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  background-color: transparent;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 768px) {
+  .months {
+    width: 100%;
+  }
+}
 
 /* TIPS AND TRICKS */
 
@@ -700,8 +805,6 @@ input[type="checkbox"] {
     -webkit-box-orient: vertical;
   }
 }
-
-
 
 /* SUMMARIES */
 
@@ -795,6 +898,9 @@ input[type="checkbox"] {
   font-weight: 700;
   color: var(--accent-color);
 }
+
+
+
 
 /* NOTIFICATION */
 
