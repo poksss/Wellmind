@@ -70,7 +70,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--card-bg-color);
+  background: var(--bg-body);
   border-right: 1px solid rgba(169, 150, 253, 0.5);
   padding: 12px 0 10px;
   overflow: hidden;
